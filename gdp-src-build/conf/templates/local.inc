@@ -32,3 +32,11 @@ BB_DISKMON_DIRS = "\
 # track the version of this file when it was generated. This can safely be ignored if
 # this doesn't mean anything to you.
 CONF_VERSION = "1"
+
+BBMASK = "meta-boot2qt/recipes/gstreamer"
+BBMASK .= "|meta-boot2qt/recipes/dracut/dracut"
+BBMASK .= "|meta-boot2qt/recipes-qt/qt5-addons/qtquickcompiler"
+BBMASK .= "|meta-boot2qt/recipes/udev"
+BBMASK .= "|meta-boot2qt/meta-intel-extras/recipes/linux"
+BBMASK .= "|meta-boot2qt/meta-intel-extras/recipes/grub"
+BBMASK .= "|meta-genivi-dev/meta-genivi-dev/recipes-qt/qt5/qtwayland_%.bbappend"

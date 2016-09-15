@@ -20,6 +20,8 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-oic \
   ${TOPDIR}/../meta-erlang \
   ${TOPDIR}/../meta-rvi \
+  ${TOPDIR}/../meta-boot2qt \
+  ${TOPDIR}/../meta-genivi-dev-qtas \
   "
 
 BBLAYERS_NON_REMOVABLE ?= " \
