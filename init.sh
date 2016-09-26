@@ -11,7 +11,7 @@ fi
 echo "You selected target $choice"
 
 declare -a targets=("qemux86-64" "porter" "raspberrypi2" "raspberrypi3" "minnowboard" "silk" "dragonboard-410c")
-declare -a supported=("qemux86-64" "minnowboard" "raspberrypi2" "raspberrypi3" "dragonboard-410c")
+declare -a supported=("qemux86-64" "porter" "minnowboard" "raspberrypi2" "raspberrypi3" "dragonboard-410c" "silk")
 declare -a variables=("choice" "eula" "machine" "modules" "bsp" "bsparr" "supported" "targets" "variables")
 
 for i in ${targets[@]}; do
@@ -34,8 +34,8 @@ else
       printf '%s\n' "${supported[@]}"
       echo "You can either "
       echo "re-run with a supported target (or override this check with -f)"
-      echo "or get the gdp-ivi9 branch:"
-      echo "   git checkout origin/gdp-ivi9 and then re-run"
+      echo "or get the gdp-11 branch:"
+      echo "   git checkout origin/gdp-11 and then re-run"
       echo "   source init.sh $machine"
       unset "${variables[@]}"
       return
