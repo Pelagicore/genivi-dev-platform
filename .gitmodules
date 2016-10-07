@@ -41,6 +41,6 @@
 [submodule "meta-boot2qt"]
 	path = meta-boot2qt
 	url = git://code.qt.io/yocto/meta-boot2qt.git
-[submodule "gdp-src-build/meta-genivi-dev-qtas"]
+[submodule "meta-genivi-dev-qtas"]
 	path = meta-genivi-dev-qtas
 	url = https://github.com/Pelagicore/meta-genivi-dev-qtas.git
