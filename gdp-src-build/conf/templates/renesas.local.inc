@@ -26,7 +26,7 @@ SDKIMAGE_FEATURES_append = " staticdev-pkgs"
 
 # Mask the DTV pkgs
 #MACHINE_FEATURES_append = " dtv"
-BBMASK = "dtv-module|ssp-module|scu-module"
+BBMASK .= "|dtv-module|ssp-module|scu-module"
 
 # Enable graphic pkgs
 #BBMASK .= "|gles-kernel-module|gles-user-module"
