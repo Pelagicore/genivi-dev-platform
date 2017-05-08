@@ -14,12 +14,15 @@ BBLAYERS ?= " \
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-filesystems \
   ${TOPDIR}/../meta-openembedded/meta-ruby \
+  ${TOPDIR}/../meta-openembedded/meta-gnome \
+  ${TOPDIR}/../meta-openembedded/meta-python \
   ${TOPDIR}/../meta-qt5 \
   ${TOPDIR}/../meta-genivi-dev/meta-genivi-dev \
-  ${TOPDIR}/../meta-rust \
   ${TOPDIR}/../meta-oic \
+  ${TOPDIR}/../meta-iot-web \
   ${TOPDIR}/../meta-erlang \
   ${TOPDIR}/../meta-rvi \
+  ${TOPDIR}/../meta-browser \
   ${TOPDIR}/../meta-boot2qt \
   ${TOPDIR}/../meta-genivi-dev-qtas \
   "
@@ -29,3 +32,8 @@ BBLAYERS_NON_REMOVABLE ?= " \
   ${OEROOT}/meta-yocto \
   ${OEROOT}/../meta-ivi/meta-ivi \
   "
+
+# Include local developer settings. This can be used to locally modify the
+# setup of mirrors, caching and any other bitbake variables.
+# The include statement has no effect if the file does not exist.
+include ${TOPDIR}/developer.conf
